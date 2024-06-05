@@ -7,25 +7,29 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #333;
 `;
 
 export const Input = styled.input`
-  margin-bottom: 10px;
-  padding: 8px;
+  padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 `;
 
 export const Button = styled.button`
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
   background-color: #007bff;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #0056b3;

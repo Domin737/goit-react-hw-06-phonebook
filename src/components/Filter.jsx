@@ -4,7 +4,7 @@ import { setFilter } from '../redux/contactsSlice';
 import { Label, Input } from './Filter.styled';
 
 const Filter = () => {
-  const filter = useSelector(state => state.contacts.filter);
+  const filter = useSelector(state => state.contacts.filter) || '';
   const dispatch = useDispatch();
 
   return (

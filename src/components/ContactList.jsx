@@ -5,8 +5,8 @@ import ContactItem from './ContactItem';
 import { List } from './ContactList.styled';
 
 const ContactList = () => {
-  const contacts = useSelector(state => state.contacts.contacts);
-  const filter = useSelector(state => state.contacts.filter);
+  const contacts = useSelector(state => state.contacts.contacts) || [];
+  const filter = useSelector(state => state.contacts.filter) || '';
   const dispatch = useDispatch();
 
   const filteredContacts = contacts.filter(contact =>
